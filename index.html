@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Get a 150+ euros discount on ABC Bootcamps with the promocode ABC-SOFIIA. Learn more about ABC Bootcamps Silicon Valley and Toronto programs.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bootcamps Promocode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            padding: 50px;
+            gap: 20px;
+        }
+        .text-section {
+            flex: 1;
+            text-align: left;
+            min-width: 250px;
+        }
+        .logo {
+            width: 150px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0 0 15px;
+            /* Allow line breaks when necessary */
+            word-wrap: break-word;
+        }
+        /* Hide manual break on desktop */
+        .mobile-break {
+            display: none;
+        }
+        .discount {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .discount-code {
+            font-weight: bold;
+        }
+        .copy-icon {
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .image-container {
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .image-container a {
+            text-decoration: none;
+            position: relative;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.3));
+        }
+        .image-container a:hover img {
+            transform: scale(1.05);
+        }
+        .contact-section {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .contact-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .contact-section p {
+            font-size: 16px;
+            color: #444;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .profile img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .profile-picture {
+            border-radius: 50%;
+        }
+        .linkedin-image {
+            width: 20px;
+            height: 20px;
+            border-radius: 0;
+        }
+        
+        .profile-info {
+            text-align: center;
+        }
+        .profile-info .name {
+            font-weight: bold;
+            color: #d4752c;
+        }
+        .profile-info .role {
+            font-size: 14px;
+            color: #666;
+        }
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .image-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .text-section {
+                text-align: center;
+                flex: none;
+            }
+            .logo {
+                width: 120px;
+            }
+            h1 {
+                font-size: 20px;
+                margin: 10px 0 15px;
+            }
+            /* Show manual break on mobile */
+            .mobile-break {
+                display: block;
+            }
+            .discount {
+                flex-direction: column;
+                align-items: center;
+            }
+            .discount-code {
+                font-size: 18px;
+            }
+            .copy-icon {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <img src="abc_bc_color_black.png" alt="ABC Bootcamps" class="logo">
+            <h1>
+                Are you looking for a promocode/discount 
+                <br class="mobile-break"> 
+                on ABC Bootcamps?
+            </h1>
+            <p>Then copy this discount code:</p>
+            <div class="discount" onclick="copyCode()">
+                <span class="discount-code">ABC-SOFIIA</span>
+                <button class="copy-icon">📋</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="https://abcbootcamps.com/programs/abc-silicon-valley/" target="_blank">
+                <img src="silicon_valley.png" alt="Silicon Valley">
+            </a>
+            <a href="https://abcbootcamps.com/programs/abc-toronto/" target="_blank">
+                <img src="toronto.png" alt="Toronto">
+            </a>
+        </div>
+    </div>
+    <div class="contact-section">
+        <h2>Still have questions about the programme?</h2>
+        <p>Don’t hesitate to reach out to me :)</p>
+        <div class="profile">
+            <a href="https://www.linkedin.com/in/sofiia-chernysh/" target="_blank">
+                <img src="sofiia_linkedin.png" class="linkedin-image" alt="LinkedIn">
+            </a>
+            <div class="profile-info">
+                <div class="name">Sofiia Chernysh</div>
+                <div class="role">ABC Bootcamps Ambassador</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyCode() {
+            const code = "ABC-SOFIIA";
+            navigator.clipboard.writeText(code).then(() => {
+                alert("Discount code copied: " + code);
+            });
+        }
+    </script>
+</body>
+</html>
